@@ -2,6 +2,7 @@ import React from "react";
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
 
 import dogImg from "../../public/hero-dog.webp";
+import catImg from "../../public/cat-hero.png";
 import Image from "next/image";
 
 const Hero = () => {
@@ -41,6 +42,16 @@ const Hero = () => {
                 <b className="bg-black text-white px-2 py-1 rounded-md">5%</b>{" "}
                 de desconto na primeira compra.
               </p>
+              <div className="flex mt-4">
+                <div className="w-32 hidden lg:block">
+                  <Image
+                    src={catImg}
+                    alt="Foto do gatinho"
+                    quality={100}
+                    className="object-fill"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
