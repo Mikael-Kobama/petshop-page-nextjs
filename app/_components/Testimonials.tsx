@@ -71,6 +71,13 @@ export function Testimonials() {
                           className="object-cover rounded-full"
                         />
                       </div>
+
+                      <p className="text-gray-200">{item.content}</p>
+
+                      <div>
+                        <p className="font-bold">{item.author}</p>
+                        <p className="text-sm text-gray-400">{item.role}</p>
+                      </div>
                     </div>
                   </article>
                 </div>
